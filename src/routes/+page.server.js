@@ -108,6 +108,10 @@ export const actions = {
 
 export const load = async () => {
   try {
+    let response = await fetch(
+      "https://67927b0fcf994cc6804a2504.mockapi.io/user"
+    );
+    let response_data = await response.json();
     const ideas = await Idea.find({}).lean();
     console.log(ideas);
     return {
@@ -117,6 +121,7 @@ export const load = async () => {
         url: idea.url,
         language: idea.language,
         difficulty: idea.difficulty,
+        response_data: response_data,
       })),
     };
   } catch (error) {
