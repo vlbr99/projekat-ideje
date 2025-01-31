@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import { fail, redirect } from "@sveltejs/kit";
 import Idea from "$lib/models/Idea";
+import "$lib/db";
 const supported_languages = [
   "Neodređeno",
   "ada",
