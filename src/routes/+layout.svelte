@@ -1,6 +1,7 @@
 <script>
   import "@fontsource-variable/outfit";
   import { Layers } from "lucide-svelte";
+
   let { children } = $props();
 </script>
 
