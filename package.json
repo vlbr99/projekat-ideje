@@ -23,6 +23,7 @@
     "vite": "^6.0.0"
   },
   "dependencies": {
+    "@sveltejs/adapter-vercel": "^5.5.3",
     "dotenv": "^16.4.7",
     "lucide-svelte": "^0.474.0",
     "mongoose": "^8.9.5"
